@@ -16,6 +16,7 @@ class PaintingsController < ApplicationController
     unless @painting.new_record?
       session[:arr].push @painting.id
     end
+    binding.pry
   end
 
   def edit
